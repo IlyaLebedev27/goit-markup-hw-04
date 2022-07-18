@@ -288,6 +288,24 @@ color: var(--accent-txt-cl)
     
     
 }
+.thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: var(--wight-bg-cl);
+    border-radius: 4px;
+    
+
+}
+
+.thumb-icon{
+
+    padding-top: 25px;
+    padding-left:100px;
+    padding-bottom: 25px;
+    padding-right: 100px;
+}
 
 .advantege-list-correct{
     width: 270px;
@@ -336,9 +354,9 @@ color: var(--main-txt-cl)
 .discription-photo{
    
     display: flex;
-    margin-right: 30px;
     justify-content: space-between;
     padding-bottom: 94px;
+    gap: 30px;
 }
 
 .discription-photo:last-child {
@@ -384,33 +402,64 @@ color: var(--main-txt-cl)
 /* .portfolio-card */
     /* margin-bottom: 20px; */
 
-
+.sociale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .sociale-link{
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.sociale-link-list{
     width: 44px;
     height: 44px;
+    background-color: var(--wight-txt-cl);
+    border-radius: 50%;
+
+
 }
+    
+    
+
+/* .sociale-link-list{
+    width: 44px;
+    height: 44px;
+    background-color: plum;
+} */
 
 .svg-links{
     fill: var(--color-svg-links);
+    
 }
 
-.svg-links:hover{
+.sociale-link:hover
+{
     background-color: var(--accent-txt-cl);
     fill: var(--wight-txt-cl);
 }
 
-.svg-links{
-    width: 20px;
-    height: 20px;
-    
-    
-    
+.sociale-link:hover .svg-links{
+    fill: var(--wight-txt-cl);
 }
+
+.decoration-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    /* background-color: tomato; */
+}
+
+/* .svg-links{
+     width: 20px;
+    height: 20px; 
+    background-position: center;
+    background-color: aqua;
+    
+    
+    
+} */
 
 .name-card{
 font-family:var(--secondary-font);
@@ -453,6 +502,40 @@ font-family:var(--secondary-font);
         
         color: var(--secondary-txt-cl)
 }
+
+.client-decoration-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-decoration-item{
+   
+    width: 170px;
+    gap: 30px;
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    
+    
+}
+
+.thumb-client{
+    width: 106px;
+    height: 60px;
+}
+
+.icon-client{
+
+}
+   
+
+
+.client-decoration-item:hover{
+    border: var(--accent-txt-cl);
+}
+
 .footer{
     background-color: var(--dark-bg-cl);
     padding-top: 60px;
