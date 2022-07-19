@@ -99,7 +99,9 @@ align-items: center;
     
     
 }
-.svg-mail:hover{
+.svg-mail:hover,
+.svg-mail:focus,
+.svg-mail:active{
     fill: var(--accent-txt-cl);
 }
 
@@ -112,7 +114,9 @@ align-items: center;
 
 }
 
-.svg-smartphone:hover {
+.svg-smartphone:hover,
+.svg-smartphone:focus,
+.svg-smartphone:active {
     fill: var(--accent-txt-cl);
 }
 
@@ -156,7 +160,7 @@ align-items: center;
     margin-right: 51px;
 }
 
-.header-link
+/* .header-link
  {
     
     font-family:var(--secondary-font);
@@ -167,10 +171,10 @@ align-items: center;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-txt-cl)
-}
- .header-link:hover,
- .header-link:focus,
- .header-link:active {
+} */
+ .header-link-adress:hover,
+ .header-link-adress:focus,
+ .header-link-adress:active {
     color:var(--accent-txt-cl)
 }
 
@@ -289,24 +293,17 @@ color: var(--accent-txt-cl)
     
     
 }
-.thumb{
+.thumb {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-content: center;
+    
     margin-bottom: 30px;
     background-color: var(--wight-bg-cl);
     border-radius: 4px;
-    
-
 }
 
-.thumb-icon{
 
-    padding-top: 25px;
-    padding-left:100px;
-    padding-bottom: 25px;
-    padding-right: 100px;
-}
+
 
 .advantege-list-correct{
     width: 270px;
@@ -433,33 +430,22 @@ color: var(--main-txt-cl)
     
 }
 
-.sociale-link:hover
+.sociale-link:hover,
+.sociale-link:focus,
+.sociale-link:active
 {
     background-color: var(--accent-txt-cl);
     fill: var(--wight-txt-cl);
 }
 
-.sociale-link:hover .svg-links{
+.sociale-link:hover,
+.sociale-link:focus,
+.sociale-link:active
+ .svg-links{
     fill: var(--wight-txt-cl);
 }
 
-/* .decoration-link{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-position: center;
-    /* background-color: tomato; */
 
-
-/* .svg-links{
-     width: 20px;
-    height: 20px; 
-    background-position: center;
-    background-color: aqua;
-    
-    
-    
-} */
 
 .name-card{
 font-family:var(--secondary-font);
@@ -515,7 +501,9 @@ font-family:var(--secondary-font);
     gap: 30px;
 }
 
-.client-decoration-item{
+
+
+.thumb-client {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,19 +512,18 @@ font-family:var(--secondary-font);
     gap: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    
-}
-
    
 
+}
 
-.client-decoration-item:hover{
+
+
+
+.thumb-client:hover,
+.thumb-client:focus,
+.thumb-client:active {
     border-color: var(--accent-txt-cl);
-    --color3:var(--accent-txt-cl);
+    --color3: var(--accent-txt-cl);
 }
 
 .footer{
@@ -645,7 +632,10 @@ font-family:var(--secondary-font);
 
 }
 
-.sociale-link-footer:hover {
+.sociale-link-footer:hover,
+.sociale-link-footer:focus,
+.sociale-link-footer:active 
+{
     background-color: var(--accent-txt-cl);
     fill: var(--wight-txt-cl);
 }
@@ -653,6 +643,9 @@ font-family:var(--secondary-font);
 .sociale-link:hover .svg-links {
     fill: var(--wight-txt-cl);
 }
+.sociale-link:focus .svg-links{
+     fill: var(--wight-txt-cl);
+ }
 
 
 
